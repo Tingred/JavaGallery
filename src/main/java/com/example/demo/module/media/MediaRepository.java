@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface MediaRepository extends JpaRepository<MediaEntity, Long>, JpaSpecificationExecutor<MediaEntity> {
 
     MediaEntity getOneByUuid(String uuid);
+
 }

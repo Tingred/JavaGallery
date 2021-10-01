@@ -26,9 +26,9 @@ public class MediaEntity {
     private String fileName;
     private String originalFileName;
 
-    public MediaEntity(String originalFilename){
+    public MediaEntity(String originalFilename, String fileName){
         this.uuid = UUID.randomUUID().toString();
-        this.fileName = Timestamp.valueOf(LocalDateTime.now()).toString();
+        this.fileName = fileName;
         this.originalFileName = originalFilename;
     }
 }
